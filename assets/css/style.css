@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Open+Sans&display=swap');
+
+/* Global styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: yellow;
+    background-color: #f0e14a;
+    font-family: 'Boogaloo', sans-serif;
+    text-align: center;
 }
