@@ -50,3 +50,20 @@ body {
     color: #e89ac7;
     transition: 0.5s;
 }
+
+#instructions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rules {
+    background-color: rgb(151, 206, 76, .9);
+    border-radius: 10px;
+    width: 800px;
+}
+
+.rules li {
+    color: #e89ac7;
+    font-size: 25px;
+}
