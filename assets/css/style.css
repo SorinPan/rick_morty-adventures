@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #f0e14a;
+    background: url(../images/background.jpg);
     font-family: 'Boogaloo', sans-serif;
     text-align: center;
 }
