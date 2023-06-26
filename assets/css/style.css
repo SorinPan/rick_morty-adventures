@@ -80,6 +80,12 @@ body {
 
 /* Game Board */
 
+#game-board {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
 #game {
     width: 800px;
     padding: 20px;
