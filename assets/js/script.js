@@ -1,9 +1,11 @@
 // Global variables
 
 const intro = document.getElementById("intro");
+const gameBoard = document.getElementById("game-board");
 const instructions = document.getElementById("instructions");
-const instructionBtn = document.getElementById("btn-instructions");
-const closeBtn = document.getElementById("btn-close");
+const playBtn = document.querySelector(".btn-play");
+const instructionBtn = document.querySelector(".btn-instructions");
+const closeBtn = document.querySelector(".btn-close");
 
 const cards = [
     'assets/images/flipcard1.png',
@@ -17,15 +19,17 @@ const cards = [
 
 // Event Listeners
 
-instructionBtn.addEventListener("click", getInstructions);
-closeBtn.addEventListener("click", hideInstructions);
+playBtn.addEventListener("click", function () {
+    displaySection(gameBoard, true);
+});
+instructionBtn.addEventListener("click", function () {
+    displaySection(instructions, true);
+});
+closeBtn.addEventListener("click", function () {
+    displaySection(instructions, false);
+});
 
-function getInstructions() {
-    instructions.style.display = "flex";
-    intro.style.display = "none";
-}
-
-function hideInstructions() {
-    instructions.style.display = "none";
-    intro.style.display = "flex";
-}
+function displaySection(section, visible) {
+    const style = visible ? 'flex' : 'none';
+    section.style.display = style;
+};
