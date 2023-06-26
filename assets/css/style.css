@@ -98,8 +98,28 @@ body {
 .card {
     height: 150px;
     width: 150px;
-    background: url(../images/backcard.jpg) center center;
-    background-size: cover;
     border-radius: 10px;
     cursor: pointer;
+    transform-style: preserve-3d;
+    transition: 0.5s ease-in-out;
+}
+
+.card-image {
+    width: 150px;
+    height: 150px;
+}
+
+.card.flip {
+    transform: rotateY('180deg');
+}
+
+.card-front,
+.card-back {
+    backface-visibility: hidden;
+}
+
+.card .card-back {
+    background: url(../images/backcard.jpg) center center;
+    background-size: cover;
+    backface-visibility: hidden;
 }
