@@ -70,9 +70,25 @@ function displaySection(section, visible) {
 };
 
 /**
+ * Shuffles the cards
+ * Inspiration taken from https://dev.to/javascriptacademy/creating-a-memory-card-game-with-html-css-and-javascript-57g1
+ */
+function shuffleCards() {
+    let currentList = cardsList.length;
+
+    while (currentList !== 0) {
+        const randomList = Math.floor(Math.random() * currentList);
+        currentList -= 1;
+        [cardsList[currentList], cardsList[randomList]] = [cardsList[randomList], cardsList[currentList]];
+    }
+}
+
+/**
  * Generates cards
  */
 function generateCards() {
+    shuffleCards();
+
     cardsList.forEach((card) => {
         const flipCard = document.createElement("img");
         flipCard.setAttribute("src", card.img);
