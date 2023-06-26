@@ -1,6 +1,6 @@
 // Global variables
 
-const intro = document.getElementById("intro");
+const intro = document.querySelector(".intro-buttons");
 const gameBoard = document.getElementById("game-board");
 const instructions = document.getElementById("instructions");
 const playBtn = document.querySelector(".btn-play");
@@ -32,4 +32,10 @@ closeBtn.addEventListener("click", function () {
 function displaySection(section, visible) {
     const style = visible ? 'flex' : 'none';
     section.style.display = style;
+
+    if (visible) {
+        intro.style.display = "none";
+    } else {
+        intro.style.display = "flex";
+    }
 };
