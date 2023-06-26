@@ -95,7 +95,7 @@ body {
     justify-content: center;
 }
 
-.cards {
+.card {
     height: 150px;
     width: 150px;
     background: url(../images/backcard.jpg) center center;
