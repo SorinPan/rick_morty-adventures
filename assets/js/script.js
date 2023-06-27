@@ -238,6 +238,8 @@ function restartGame() {
     resetCards();
     stopTimer();
     game.textContent = "";
+    timer.textContent = "";
+    gameStart = false;
     shuffleCards();
     generateCards();
 }
