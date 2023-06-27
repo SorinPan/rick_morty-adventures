@@ -218,6 +218,7 @@ function resetCards() {
 
 function restartGame() {
     resetCards();
+    game.textContent = "";
     shuffleCards();
     generateCards();
 }
