@@ -55,8 +55,12 @@ let lockCards = false;
 // Event Listeners
 
 playBtn.addEventListener("click", function () {
-    displaySection(gameBoard, true);
-    generateCards();
+    const userName = prompt("Enter you name:");
+    if (userName) {
+        startGame();
+    } else {
+        alert("Please enter your name to continue.");
+    }
 });
 instructionBtn.addEventListener("click", function () {
     displaySection(instructions, true);
