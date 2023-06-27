@@ -131,6 +131,8 @@ function flipCards() {
     } else {
         clickedCard = false;
         secondCard = this;
+
+        checkIfMatch();
     }
 }
 
@@ -162,4 +164,14 @@ function checkIfMatch() {
     } else {
         flipBack();
     }
+}
+
+/**
+ * Flips back the cards if no match is found
+ */
+function flipBack() {
+    setTimeout(() => {
+        firstCard.classList.remove("flip");
+        secondCard.classList.remove("flip");
+    }, 1000);
 }
