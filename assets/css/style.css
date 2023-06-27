@@ -9,9 +9,12 @@
 }
 
 body {
-    background: url(../images/background.jpg);
+    background: url(../images/background.jpg) no-repeat center;
+    background-size: cover;
     font-family: 'Boogaloo', sans-serif;
     text-align: center;
+    height: 100vh;
+    width: 100vw;
 }
 
 h2 {
@@ -27,7 +30,7 @@ h2 {
     font-size: 70px;
     text-transform: uppercase;
     color: #44281d;
-    margin-top: 50px;
+    padding-top: 50px;
 }
 
 .intro-buttons {
