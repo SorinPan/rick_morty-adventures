@@ -224,13 +224,19 @@ function resetCards() {
     secondCard = null;
 }
 
+function stopTimer() {
+    clearInterval(timeSpan);
+}
+
 function endOfGame () {
+    stopTimer();
     displaySection(gameBoard, false);
     displaySection(gameEnd, true);
 }
 
 function restartGame() {
     resetCards();
+    stopTimer();
     game.textContent = "";
     shuffleCards();
     generateCards();
