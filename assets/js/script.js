@@ -6,6 +6,7 @@ const instructions = document.getElementById("instructions");
 const playBtn = document.querySelector(".btn-play");
 const instructionBtn = document.querySelector(".btn-instructions");
 const closeBtn = document.querySelector(".btn-close");
+const restartBtn = document.querySelector(".btn-restart");
 const game = document.getElementById("game");
 const timer = document.querySelector(".time");
 
@@ -62,12 +63,18 @@ playBtn.addEventListener("click", function () {
         alert("Please enter your name to continue.");
     }
 });
+
 instructionBtn.addEventListener("click", function () {
     displaySection(instructions, true);
 });
+
 closeBtn.addEventListener("click", function () {
     displaySection(instructions, false);
 });
+
+restartBtn.addEventListener("click", function () {
+    restartGame();
+})
 
 function displaySection(section, visible) {
     const style = visible ? 'flex' : 'none';
