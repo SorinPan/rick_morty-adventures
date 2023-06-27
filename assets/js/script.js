@@ -81,6 +81,14 @@ function displaySection(section, visible) {
 };
 
 /**
+ * Starts the game after the user inputs their name
+ */
+function startGame() {
+    displaySection(gameBoard, true);
+    generateCards();
+}
+
+/**
  * Shuffles the cards
  * Inspiration taken from https://dev.to/javascriptacademy/creating-a-memory-card-game-with-html-css-and-javascript-57g1
  */
