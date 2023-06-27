@@ -46,6 +46,7 @@ const cards = [
 
 const cardsList = [...cards, ...cards];
 
+let gameStart = false;
 let minutes = 0;
 let seconds = 0;
 let timeSpan;
@@ -118,6 +119,10 @@ function generateCards() {
 };
 
 function flipCards() {
+    if (!gameStart) {
+        gameStart = true;
+        startTimer();
+    }
     this.classList.toggle("flip");
 }
 
