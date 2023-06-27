@@ -90,10 +90,22 @@ function generateCards() {
     shuffleCards();
 
     cardsList.forEach((card) => {
-        const flipCard = document.createElement("img");
-        flipCard.setAttribute("src", card.img);
+        const flipCard = document.createElement("div");
         flipCard.setAttribute("data-name", card.name);
         flipCard.classList.add("card");
+
+        const cardFront = document.createElement("div");
+        cardFront.classList.add("card-front");
+        const cardImage = document.createElement("img");
+        cardImage.classList.add("card-image");
+        cardImage.setAttribute("src", card.img);
+        cardFront.appendChild(cardImage);
+
+        const cardBack = document.createElement("div");
+        cardBack.classList.add("card-back");
+
+        flipCard.appendChild(cardFront);
+        flipCard.appendChild(cardBack);
         game.appendChild(flipCard);
     })
 };
