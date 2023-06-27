@@ -52,6 +52,7 @@ let timeSpan;
 let clickedCard = false;
 let firstCard, secondCard;
 let lockCards = false;
+let matchPairs = 0;
 
 // Event Listeners
 
@@ -207,6 +208,12 @@ function keepCards() {
     firstCard.removeEventListener("click", flipCards);
     secondCard.removeEventListener("click", flipCards);
     resetCards();
+
+    matchPairs++;
+
+    if (matchPairs === cardsList.length / 2) {
+        endOfGame();
+    }
 }
 
 function resetCards() {
