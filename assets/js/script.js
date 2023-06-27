@@ -232,6 +232,13 @@ function endOfGame () {
     stopTimer();
     displaySection(gameBoard, false);
     displaySection(gameEnd, true);
+
+    const restartBtnEndGame = document.getElementById("restart-endgame");
+    restartBtnEndGame.addEventListener("click", function () {
+        restartGame()
+        displaySection(gameEnd, false);
+        displaySection(gameBoard, true);
+    });
 }
 
 function restartGame() {
