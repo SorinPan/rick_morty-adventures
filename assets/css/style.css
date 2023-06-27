@@ -129,3 +129,16 @@ body {
     background-size: cover;
     backface-visibility: hidden;
 }
+
+/* Score board */
+
+#stats {
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#stats p {
+    color: #e89ac7;
+    font-size: 30px;
+}
