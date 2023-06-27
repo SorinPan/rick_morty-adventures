@@ -177,6 +177,7 @@ function flipBack() {
     setTimeout(() => {
         firstCard.classList.remove("flip");
         secondCard.classList.remove("flip");
+        resetCards();
     }, 1000);
 }
 
@@ -186,4 +187,12 @@ function flipBack() {
 function keepCards() {
     firstCard.removeEventListener("click", flipCards);
     secondCard.removeEventListener("click", flipCards);
+    resetCards();
+}
+
+function resetCards() {
+    clickedCard = false;
+    lockCards = false;
+    firstCard = null;
+    secondCard = null;
 }
