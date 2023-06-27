@@ -7,7 +7,7 @@ const playBtn = document.querySelector(".btn-play");
 const instructionBtn = document.querySelector(".btn-instructions");
 const closeBtn = document.querySelector(".btn-close");
 const game = document.getElementById("game");
-const timer = document.querySelector("time");
+const timer = document.querySelector(".time");
 
 const cards = [
     {
@@ -47,8 +47,6 @@ const cards = [
 const cardsList = [...cards, ...cards];
 
 let gameStart = false;
-let minutes = 0;
-let seconds = 0;
 let timeSpan;
 
 // Event Listeners
@@ -127,13 +125,19 @@ function flipCards() {
 }
 
 function startTimer() {
-    timeSpan = setInterval(function () {
-        seconds++;
+    const timeTotal = 5 * 60;
+    let timeRemaining = timeTotal;
 
-        if (seconds === 60) {
-            minutes++;
-            seconds = 0;
+    timeSpan = setInterval(function () {
+        timeRemaining--;
+
+        if (timeRemaining < 0) {
+            stopTimer();
+            return;
         }
-        timer.textContent = "Time " + minutes + " : " + seconds;
+
+        const minutes = Math.floor(timeRemaining / 60);
+        const seconds = timeRemaining % 60;
+        timer.textContent = minutes + " : " + seconds;
     }, 1000);
 }
