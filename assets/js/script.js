@@ -215,3 +215,9 @@ function resetCards() {
     firstCard = null;
     secondCard = null;
 }
+
+function restartGame() {
+    resetCards();
+    shuffleCards();
+    generateCards();
+}
