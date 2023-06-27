@@ -175,3 +175,11 @@ function flipBack() {
         secondCard.classList.remove("flip");
     }, 1000);
 }
+
+/**
+ * Keeps the cards flipped when match is found
+ */
+function keepCards() {
+    firstCard.removeEventListener("click", flipCards);
+    secondCard.removeEventListener("click", flipCards);
+}
