@@ -107,5 +107,11 @@ function generateCards() {
         flipCard.appendChild(cardFront);
         flipCard.appendChild(cardBack);
         game.appendChild(flipCard);
+
+        flipCard.addEventListener("click", flipCards);
     })
 };
+
+function flipCards() {
+    this.classList.toggle("flip");
+}
