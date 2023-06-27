@@ -7,6 +7,7 @@ const playBtn = document.querySelector(".btn-play");
 const instructionBtn = document.querySelector(".btn-instructions");
 const closeBtn = document.querySelector(".btn-close");
 const game = document.getElementById("game");
+const timer = document.querySelector("time");
 
 const cards = [
     {
@@ -44,6 +45,10 @@ const cards = [
 ];
 
 const cardsList = [...cards, ...cards];
+
+let minutes = 0;
+let seconds = 0;
+let timeSpan;
 
 // Event Listeners
 
@@ -114,4 +119,16 @@ function generateCards() {
 
 function flipCards() {
     this.classList.toggle("flip");
+}
+
+function startTimer() {
+    timeSpan = setInterval(function () {
+        seconds++;
+
+        if (seconds === 60) {
+            minutes++;
+            seconds = 0;
+        }
+        timer.textContent = "Time " + minutes + " : " + seconds;
+    }, 1000);
 }
