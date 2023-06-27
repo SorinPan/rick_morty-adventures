@@ -50,6 +50,7 @@ let gameStart = false;
 let timeSpan;
 let clickedCard = false;
 let firstCard, secondCard;
+let lockCards = false;
 
 // Event Listeners
 
@@ -119,6 +120,8 @@ function generateCards() {
 };
 
 function flipCards() {
+    if (lockCards) return;
+
     if (!gameStart) {
         gameStart = true;
         startTimer();
@@ -131,6 +134,7 @@ function flipCards() {
     } else {
         clickedCard = false;
         secondCard = this;
+        lockCards = true;
 
         checkIfMatch();
     }
