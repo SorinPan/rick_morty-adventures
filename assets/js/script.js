@@ -48,6 +48,8 @@ const cardsList = [...cards, ...cards];
 
 let gameStart = false;
 let timeSpan;
+let clickedCard = false;
+let firstCard, secondCard;
 
 // Event Listeners
 
@@ -122,6 +124,14 @@ function flipCards() {
         startTimer();
     }
     this.classList.toggle("flip");
+
+    if (!clickedCard) {
+        clickedCard = true;
+        firstCard = this;
+    } else {
+        clickedCard = false;
+        secondCard = this;
+    }
 }
 
 function startTimer() {
