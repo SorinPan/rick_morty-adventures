@@ -151,3 +151,15 @@ function startTimer() {
         timer.textContent = minutes + " : " + seconds;
     }, 1000);
 }
+
+/**
+ * Checks if the data-name of first and second cards clicked are a match.
+ * Inspiration taken from https://dev.to/javascriptacademy/creating-a-memory-card-game-with-html-css-and-javascript-57g1
+ */
+function checkIfMatch() {
+    if (firstCard.dataset.name === secondCard.dataset.name) {
+        keepCards();
+    } else {
+        flipBack();
+    }
+}
