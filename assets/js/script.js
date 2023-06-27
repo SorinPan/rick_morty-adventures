@@ -3,6 +3,7 @@
 const intro = document.querySelector(".intro-buttons");
 const gameBoard = document.getElementById("game-board");
 const instructions = document.getElementById("instructions");
+const gameEnd = document.getElementById("game-end");
 const playBtn = document.querySelector(".btn-play");
 const instructionBtn = document.querySelector(".btn-instructions");
 const closeBtn = document.querySelector(".btn-close");
@@ -221,6 +222,11 @@ function resetCards() {
     lockCards = false;
     firstCard = null;
     secondCard = null;
+}
+
+function endOfGame () {
+    displaySection(gameBoard, false);
+    displaySection(gameEnd, true);
 }
 
 function restartGame() {
