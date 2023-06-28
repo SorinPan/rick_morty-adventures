@@ -233,6 +233,9 @@ function endOfGame () {
     displaySection(gameBoard, false);
     displaySection(gameEnd, true);
 
+    const timePassed = document.querySelector('.time-passed');
+    timePassed.textContent = timer.textContent;
+
     const restartBtnEndGame = document.getElementById("restart-endgame");
     restartBtnEndGame.addEventListener("click", function () {
         restartGame()
