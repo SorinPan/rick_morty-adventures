@@ -18,9 +18,18 @@ Rick & Morty Adventures is a simple memory card game based on the Rick and Morty
 
 #### First Time Visitor Goals
 
+* As a first time user I want to quickly understand what the application is about.
+* As a first time user I want to get clear instructions on how to play the game and what the rules are.
+* As a first time user I want the easily navigate the site and start a game.
+
 #### Returning Visitor Goals
 
+* As a returning user I want to have an enjoyable experience while playing the game.
+* As a returning user I want to be able to see and achieve a better score.
+
 #### Frequent Visitor Goals
+
+* As a frequent user I want to be able to master the game.
 
 ## Design
 
