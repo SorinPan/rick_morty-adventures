@@ -54,6 +54,7 @@ let clickedCard = false;
 let firstCard, secondCard;
 let lockCards = false;
 let matchPairs = 0;
+let movesCount = 0;
 
 // Event Listeners
 
@@ -189,6 +190,8 @@ function checkIfMatch() {
     } else {
         flipBack();
     }
+
+    movesCount++;
 }
 
 /**
