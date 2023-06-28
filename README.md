@@ -102,6 +102,10 @@ As the site has a specific theme, I used images from the Rick and Morty tv-show.
 
 ### Languages
 
+* HTML
+* CSS
+* JavaScript
+
 ### Frameworks, Libraries & Programs
 
 ## Deployment & Local Development
