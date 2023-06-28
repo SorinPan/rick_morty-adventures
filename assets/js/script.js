@@ -79,6 +79,11 @@ restartBtn.addEventListener("click", function () {
     restartGame();
 })
 
+/**
+ * Shows and hide elements passed as parameters
+ * @param {Element} section 
+ * @param {boolean} visible 
+ */
 function displaySection(section, visible) {
     const style = visible ? 'flex' : 'none';
     section.style.display = style;
@@ -141,6 +146,11 @@ function generateCards() {
     })
 };
 
+/**
+ * Click function for the cards. Adds a class of flip to the cards which is styled with css for effect
+ * Inspiration taken from https://dev.to/javascriptacademy/creating-a-memory-card-game-with-html-css-and-javascript-57g1
+ * @returns 
+ */
 function flipCards() {
     if (lockCards) return;
 
@@ -162,6 +172,9 @@ function flipCards() {
     }
 }
 
+/**
+ * Starts the count down from 5 minutes
+ */
 function startTimer() {
     const timeTotal = 5 * 60;
     let timeRemaining = timeTotal;
@@ -221,6 +234,9 @@ function keepCards() {
     }
 }
 
+/**
+ * Updates the moves with one when the user clicks on the second card
+ */
 function updateCount() {
     const moves = document.querySelector(".moves");
     const movesMade = document.querySelector(".moves-made");
@@ -228,6 +244,9 @@ function updateCount() {
     movesMade.textContent = movesCount;
 }
 
+/**
+ * Resets the variables of the cards
+ */
 function resetCards() {
     clickedCard = false;
     lockCards = false;
@@ -235,6 +254,9 @@ function resetCards() {
     secondCard = null;
 }
 
+/**
+ * Stop the timer
+ */
 function stopTimer() {
     clearInterval(timeSpan);
 }
@@ -244,6 +266,10 @@ function resetMoves(){
     updateCount();
 }
 
+/**
+ * End of game message. Display the time left and the moves made.
+ * Resets the timer and the moves count.
+ */
 function endOfGame () {
     stopTimer();
     resetMoves();
@@ -262,6 +288,9 @@ function endOfGame () {
     });
 }
 
+/**
+ * Restarts the game
+ */
 function restartGame() {
     resetCards();
     resetMoves();
