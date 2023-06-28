@@ -8,10 +8,6 @@ Rick & Morty Adventures is a simple memory card game based on the Rick and Morty
 
 ---
 
-## Contents
-
----
-
 ## User Experience (UX)
 
 ### User Stories
@@ -145,5 +141,50 @@ I used GitHub pages to deploy the website:
 
 ## Testing
 
+### Validator
+
+Used w3c to validate HTML and CSS code and jshint for the JavaScript.
+
+<details><summary>HTML</summary>
+<img src="docs/validation/html-validator.png">
+</details>
+
+<details><summary>CSS</summary>
+<img src="docs/validation/css-validator.png">
+</details>
+
+<details><summary>JavaScript</summary>
+<img src="docs/validation/js-validator.png">
+</details>
+
 ## Credits
+
+### Code
+- https://dev.to/javascriptacademy/creating-a-memory-card-game-with-html-css-and-javascript-57g1
+- https://github.com/kera-cudmore/readme-examples
+- My mentor: Brian O'Hare
+
+### Images
+
+[Background image](https://www.wallpaperflare.com/rick-and-morty-adult-swim-cartoon-rick-sanchez-morty-smith-wallpaper-pvdnf/download/1920x1080)
+
+
+[Card 1](https://www.freepnglogos.com/images/rick-and-morty-31043.html)
+
+[Card 2](https://www.freepnglogos.com/images/rick-and-morty-30990.html)
+
+[Card 3](https://www.freepnglogos.com/images/rick-and-morty-30992.html)
+
+[Card 4](https://www.cleanpng.com/png-pickled-cucumber-rick-sanchez-pickle-rick-pickling-5505869/)
+
+[Card 5](https://www.cleanpng.com/png-fan-art-character-cartoon-rick-and-morty-995848/)
+
+[Card 5](https://www.cleanpng.com/png-gazorpian-raising-gazorpazorp-rick-sanchez-charact-1024870/)
+
+[Card 7](https://www.cleanpng.com/png-morty-smith-rick-sanchez-youtube-animation-1999789/)
+
+[Card 8](https://www.cleanpng.com/png-character-fan-art-homo-sapiens-cartoon-rick-and-mo-5972793/)
+
+
+[Back Card](https://pixabay.com/sv/illustrations/rick-och-morty-tecken-konst-fiktion-6344804/)
 
