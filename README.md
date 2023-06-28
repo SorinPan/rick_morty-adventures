@@ -65,6 +65,37 @@ As the site has a specific theme, I used images from the Rick and Morty tv-show.
 
 ## Features
 
+### Home Page
+
+![Home Page Feature](docs/features/home-page-feature.png)
+
+* The home page is simple and intuitive. It display the site title and two buttons. 
+* The Play button will first display a prompt that encourages the users to input their names. After the name input, the game board will display.
+* The Instructions button will display a pop-up with the rules of the game.
+
+### Instructions
+
+![Instructions Feature](docs/features/instructions-feature.png)
+
+* The instructions feature display the rules of the game.
+* Helps the user to understand how the game is played.
+* Contains a Close button so the user can go back to the home page.
+
+### Game Board
+
+![Game Board Feature](docs/features/game-board-feature.png)
+
+* The user now sees all the cards face down. The Timer will start once the user clicks on any card to flip it.
+* Contains a Restart button so the user can restart the game at any moment.
+
+### End Game
+
+![End of Game Feature](docs/features/end-game-feature.png)
+
+* A pop-up message that appears once the users find all the card pairs.
+* It informs the users that they won the game and displayes the score.
+* Contains a Restart button so the users can restart the game again and beat the last score.
+
 ### Accessibility
 
 ## Technologies Used
