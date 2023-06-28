@@ -122,7 +122,26 @@ As the site has a specific theme, I used images from the Rick and Morty tv-show.
 
 ### Deployment
 
+I used GitHub pages to deploy the website:
+
+1. Log in to GitHub.
+2. Select the project's repository.
+3. Go to "Settings".
+4. Click on "Pages".
+5. In the Source section, select branch "Main" and then select "Root" from the dropdown menu.
+6. Click "Save".
+7. Wait a couple of seconds and GitHub will provide the link to deployed website.
+
 ### Local Development
+
+- Log in to [Github](https://github.com/).
+- Select project [Repository](https://github.com/SorinPan/tuner-nation).
+- Click on the "Code" button.
+- Copy the URL under HTTPS.
+- Open VsCode.
+- Log in to VsCode with your Github account.
+- Press SHIFT + CMD + P (For Mac), type "Clone" and select "Git:Clone".
+- Paste in the URL and press Enter to create the local clone.
 
 ## Testing
 
