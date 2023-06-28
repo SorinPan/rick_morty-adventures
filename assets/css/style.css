@@ -167,3 +167,30 @@ h2 {
     font-weight: 400;
     padding: 20px 0 20px 0;
 }
+
+/* Responsive Design */
+
+/* Screen sizes from 950px wide and down */
+
+@media screen and (max-width: 950px) {
+    
+    .title {
+        padding: 20px;
+    }
+
+    /* Responsive Game Board */
+
+    #game {
+        grid-template-columns: repeat(4, 100px);
+    }
+
+    .card {
+        height: 100px;
+        width: 100px;
+    }
+
+    .card-image {
+        width: 100px;
+        height: 100px;
+    } 
+}
