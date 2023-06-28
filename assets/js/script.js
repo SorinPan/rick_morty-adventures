@@ -239,8 +239,14 @@ function stopTimer() {
     clearInterval(timeSpan);
 }
 
+function resetMoves(){
+    movesCount = 0;
+    updateCount();
+}
+
 function endOfGame () {
     stopTimer();
+    resetMoves();
     updateCount();
     displaySection(gameBoard, false);
     displaySection(gameEnd, true);
@@ -258,6 +264,7 @@ function endOfGame () {
 
 function restartGame() {
     resetCards();
+    resetMoves();
     stopTimer();
     game.textContent = "";
     timer.textContent = "";
