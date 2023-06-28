@@ -1,5 +1,10 @@
 # Rick & Morty Adventures
 
+![Responsive view of Rick & Morty Adventures](docs/am-i-responsive.png)
+
+Vie live site here: [Rick & Morty Adventures](https://sorinpan.github.io/rick_morty-adventures/)
+
+Rick & Morty Adventures is a simple memory card game based on the Rick and Morty tv show. The application is for users of all ages that want to enjoy a classic memory card game.
 
 ---
 
