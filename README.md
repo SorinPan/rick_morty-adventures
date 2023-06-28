@@ -35,6 +35,12 @@ Rick & Morty Adventures is a simple memory card game based on the Rick and Morty
 
 ### Colour Scheme
 
+As the theme of the game is the tv-show Rick and Morty, I tried to use the colors that tipically appear on the show. I used the images of Rick and Morty to be able to create a palette. 
+
+Bistre, Maize and Amaranth Pink fits perfectly with the background image and gives a vibe of the actual tv-show.
+
+![Rick & Morty colour scheme](docs/colour-scheme.png)
+
 ### Typography
 
 ### Imagery
