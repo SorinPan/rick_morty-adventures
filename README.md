@@ -43,6 +43,16 @@ Bistre, Maize and Amaranth Pink fits perfectly with the background image and giv
 
 ### Typography
 
+Google Fonts was used to import the following fonts:
+
+![Boogaloo Font](docs/font-boogaloo.png)
+
+* The font Boogaloo was used for the titles and the majority of content. I think it has a playful appearance and fits perfectly with the theme of the game.
+
+![Open Sans Font](docs/font-open-sans.png)
+
+* The font Open Sans was used mainly in the instructions section. I think the font gives the site balance.
+
 ### Imagery
 
 ### Wireframes
