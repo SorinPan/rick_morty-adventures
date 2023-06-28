@@ -223,7 +223,9 @@ function keepCards() {
 
 function updateCount() {
     const moves = document.querySelector(".moves");
+    const movesMade = document.querySelector(".moves-made");
     moves.textContent = movesCount;
+    movesMade.textContent = movesCount;
 }
 
 function resetCards() {
@@ -239,6 +241,7 @@ function stopTimer() {
 
 function endOfGame () {
     stopTimer();
+    updateCount();
     displaySection(gameBoard, false);
     displaySection(gameEnd, true);
 
