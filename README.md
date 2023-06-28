@@ -108,6 +108,16 @@ As the site has a specific theme, I used images from the Rick and Morty tv-show.
 
 ### Frameworks, Libraries & Programs
 
+* [Figma](https://www.figma.com) - Used for wireframes
+* [Google Fonts](https://fonts.google.com) - Used to import fonts
+* [VS Code](https://code.visualstudio.com) - Used to develop the website
+* [Git](https://git-scm.com) - Used for version control
+* [GitHub](https://github.com) - Used to store files and deploy
+* [Google Developer Tools](https://developer.chrome.com/docs/) - Used for troubleshooting, test features and styling
+* [FireFox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/) - Used for troubleshooting, test features and styling
+* [Am I Responsive](https://ui.dev/amiresponsive) - Used to show the websites responsiveness on different devices.
+* [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web) - Used for learning
+
 ## Deployment & Local Development
 
 ### Deployment
