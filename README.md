@@ -55,6 +55,8 @@ Google Fonts was used to import the following fonts:
 
 ### Imagery
 
+As the site has a specific theme, I used images from the Rick and Morty tv-show. I chose a background that displays the characters in the shows and for the flipcards I chose to have different characters. 
+
 ### Wireframes
 
 ![Game wireframe for mobile](docs/wireframes/game-wireframe.png)
