@@ -192,6 +192,7 @@ function checkIfMatch() {
     }
 
     movesCount++;
+    updateCount();
 }
 
 /**
@@ -218,6 +219,11 @@ function keepCards() {
     if (matchPairs === cardsList.length / 2) {
         endOfGame();
     }
+}
+
+function updateCount() {
+    const moves = document.querySelector(".moves");
+    moves.textContent = movesCount;
 }
 
 function resetCards() {
